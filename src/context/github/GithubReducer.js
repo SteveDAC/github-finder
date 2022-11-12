@@ -7,16 +7,30 @@ const githubRecucer = (state, action) => {
         isLoading: false,
       }
 
+    case 'GET_USER':
+      return {
+        ...state,
+        user: action.payload,
+        isLoading: false,
+      }
+
+    case 'GET_USER_REPOS':
+      return {
+        ...state,
+        repos: action.payload,
+        isLoading: false,
+      }
+
     case 'SET_ISLOADING':
       return {
         ...state,
         isLoading: true,
       }
-    
+
     case 'CLEAR_RESULTS':
       return {
         ...state,
-        users: []
+        users: [],
       }
 
     default:
