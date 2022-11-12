@@ -6,13 +6,13 @@ const githubRecucer = (state, action) => {
         users: action.payload,
         isLoading: false,
       }
-    
+
     case 'SET_ISLOADING':
       return {
         ...state,
-        isLoading: true
+        isLoading: true,
       }
-      
+
     default:
       return state
   }
