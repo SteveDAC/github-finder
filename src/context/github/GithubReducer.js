@@ -12,6 +12,12 @@ const githubRecucer = (state, action) => {
         ...state,
         isLoading: true,
       }
+    
+    case 'CLEAR_RESULTS':
+      return {
+        ...state,
+        users: []
+      }
 
     default:
       return state
