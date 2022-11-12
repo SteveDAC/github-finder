@@ -1,3 +1,3 @@
 # Github Finder
 
-A Udemy React Front to Back cource lesson app.
+A Udemy React Front to Back course lesson app.
