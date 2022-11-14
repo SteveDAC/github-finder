@@ -13,7 +13,7 @@ function RepoItem({ repo }) {
   } = repo
 
   return (
-    <div className='card mb-2 rounded-md bg-gray-800 hover:bg-gray-900'>
+    <div className='card mb-2 rounded-md bg-base-300 text-base-content shadow-md hover:bg-base-200'>
       <div className='card-body'>
         <h3 className='mb-2 text-xl font-semibold'>
           <a href={html_url} target='_blank' rel='noreferrer'>
@@ -23,16 +23,16 @@ function RepoItem({ repo }) {
         </h3>
         <p className='mb-3'>{description}</p>
         <div>
-          <div className="mr-2 badge badge-info badge-lf">
+          <div className='badge-lf badge-info badge mr-2'>
             <FaEye className='mr-2' /> {watchers_count}
           </div>
-          <div className="mr-2 badge badge-success badge-lf">
+          <div className='badge-lf badge-success badge mr-2'>
             <FaStar className='mr-2' /> {stargazers_count}
           </div>
-          <div className="mr-2 badge badge-error badge-lf">
+          <div className='badge-lf badge-error badge mr-2'>
             <FaInfo className='mr-2' /> {open_issues}
           </div>
-          <div className="mr-2 badge badge-warning badge-lf">
+          <div className='badge-lf badge-warning badge mr-2'>
             <FaUtensils className='mr-2' /> {forks}
           </div>
         </div>
